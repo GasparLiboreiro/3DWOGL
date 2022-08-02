@@ -9,5 +9,9 @@ a hileras de colores en la pantalla
 
 
 Este motor es realmente primitivo pero puede hacer un par de cosas.
-S renderizan todos los modelos dentro del array "escena", 
+Se renderizan todos los modelos dentro del array "escena", 
 escena.add(/*new Objeto*/); en el constructor, hay bastantes ejemplos
+/*
+  aclaracion, Objeto es una clase del programa, no confundir con Object,
+  la super-clase de todas las clases
+*/
