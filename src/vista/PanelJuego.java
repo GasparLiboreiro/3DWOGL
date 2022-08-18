@@ -125,7 +125,7 @@ public class PanelJuego extends JPanel{
 		for(int x=0; x<(vertices.size())-1; x++) {
 			for(int y=0; y<(vertices.get(x).size())-1; y++) {
 				esfera.poligonos.add(new Poligono(vertices.get(x).get(y), vertices.get(x).get(y+1), vertices.get(x+1).get(y+1), c));
-				esfera.poligonos.add(new Poligono(vertices.get(x).get(y), vertices.get(x+1).get(y+1), vertices.get(x).get(y+1), c));
+				esfera.poligonos.add(new Poligono(vertices.get(x).get(y), vertices.get(x+1).get(y), vertices.get(x+1).get(y+1), c));
 			}
 		}
 		for(int x=0; x<(vertices.size())-1; x++) {
@@ -216,7 +216,7 @@ public class PanelJuego extends JPanel{
 				if(c!=null) 
 					color=new ColorCl((int)(c.getRed()*((double)(x)/vertices.size())), (int)(c.getGreen()*((double)(x)/vertices.size())), (int)(c.getBlue()*((double)(x)/vertices.size())));
 				out.poligonos.add(new Poligono(vertices.get(x).get(y), vertices.get(x).get(y+1), vertices.get(x+1).get(y+1), color));
-				out.poligonos.add(new Poligono(vertices.get(x).get(y), vertices.get(x+1).get(y+1), vertices.get(x+1).get(y), color));
+				out.poligonos.add(new Poligono(vertices.get(x).get(y), vertices.get(x+1).get(y), vertices.get(x+1).get(y+1), color));
 			}
 		}
 		return out;
